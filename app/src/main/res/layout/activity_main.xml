@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fujisoft.suppertextview.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--原生的TextView显示中英文文本时，右边不对齐。显示很不好。直接把SupperTextView复制到自己的项目中，再在xml文件中直接引入使用就可以了-->
+        <com.fujisoft.suppertextview.SupperTextView
+            android:textSize="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AppBarLayout是一个垂直的LinearLayout，实现了Material Design中app bar的scrolling gestures特性。AppBarLayout的子View应该声明想要具有的“滚动行为”，这可以通过layout_scrollFlags属性或是setScrollFlags()方法来指定。AppBarLayout只有作为CoordinatorLayout的直接子View时才能正常工作，为了让AppBarLayout能够知道何时滚动其子View，我们还应该在CoordinatorLayout布局中提供一个可滚动View，我们称之为scrolling view。scrolling view和AppBarLayout之间的关联，通过将scrolling view的Behavior设为AppBarLayout.ScrollingViewBehavior来建立。根据上面的描述我们可以知道，AppBarLayout主要用来实现这样的功能：当位于同一父容器中的可滚动View发生滚动时，AppBarLayout会根据子View声明的滚动行为来对其子View进行相应的滚动。scroll设成这个值的效果就好比本View和scrolling view是“一体”的。具体示例我们在上面已经给出。有一点特别需要我们的注意，为了其他的滚动行为生效，必须同时指定scroll和相应的标记，比如我们想要exitUntilCollapsed所表现的滚动行为，必须将layout_scrollFlags指定为“scroll|exitUntilCollapsed”。exitUntilCollapsed当本View离开屏幕时，会被“折叠”直到达到其最小高度。我们可以这样理解这个效果：当我们开始向上滚动scrolling view时，本View会先接管滚动事件，这样本View会先进行滚动，直到滚动到了最小高度（折叠了），scrolling view才开始实际滚动。而当本View已完全折叠后，再向下滚动scrolling view，直到scrolling view顶部的内容完全显示后，本View才会开始向下滚动以显现出来。CollapsingToolbarLayout通常用来在布局中包裹一个Toolbar，以实现具有“折叠效果“”的顶部栏。它需要是AppBarLayout的直接子View，这样才能发挥出效果。CollapsingToolbarLayout包含以下特性CollapsingToolbarLayout通常用来在布局中包裹一个Toolbar，以实现具有“折叠效果“”的顶部栏。它需要是AppBarLayout的直接子View，这样才能发挥出效果。CollapsingToolbarLayout包含以下特性CollapsingToolbarLayout通常用来在布局中包裹一个Toolbar，以实现具有“折叠效果“”的顶部栏。它需要是AppBarLayout的直接子View，这样才能发挥出效果。CollapsingToolbarLayout包含以下特性CollapsingToolbarLayout通常用来在布局中包裹一个Toolbar，以实现具有“折叠效果“”的顶部栏。它需要是AppBarLayout的直接子View，这样才能发挥出效果。CollapsingToolbarLayout包含以下特性CollapsingToolbarLayout通常用来在布局中包裹一个Toolbar，以实现具有“折叠效果“”的顶部栏。它需要是AppBarLayout的直接子View，这样才能发挥出效果。CollapsingToolbarLayout包含以下特性CollapsingToolbarLayout通常用来在布局中包裹一个Toolbar，以实现具有“折叠效果“”的顶部栏。它需要是AppBarLayout的直接子View，这样才能发挥出效果。CollapsingToolbarLayout包含以下特性CollapsingToolbarLayout通常用来在布局中包裹一个Toolbar，以实现具有“折叠效果“”的顶部栏。它需要是AppBarLayout的直接子View，这样才能发挥出效果。CollapsingToolbarLayout包含以下特性" />
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
