@@ -1,0 +1,1 @@
+# SupperTextView解决原生TextView显示混合文本（中文，英文等等各种不同语言的组合文本）时，结尾不对其的问题。直接将SupperTextView复制到自己的项目中，在xml中引用既可。
